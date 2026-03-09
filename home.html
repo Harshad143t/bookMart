@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Book-Mart-Home</title>
+</head>
+
+<body id="home">
+    <nav id="nav" aria-label="Main navigation">
+        <p id="log">
+            <i class="fa-solid fa-book-open" aria-hidden="true"></i>
+            BookMart
+        </p>
+
+        <button id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
+
+        <div id="searchdiv">
+            <input type="text" id="searchBook" placeholder="Search by book name" aria-label="Search books by name">
+            <button id="searchBtn" class="fa-solid fa-magnifying-glass" aria-label="Search books"></button>
+        </div>
+
+        <div class="nav-actions">
+            <button onclick="postBook()" id="postBook">Upload book</button>
+            <div class="menu-user-id">
+                <span class="marquee" id="loggeduser">userId:</span>
+            </div>
+            <div class="menu-auth-btn">
+                <button id="profile" onclick="logInbtn()">Log in</button>
+            </div>
+        </div>
+    </nav>
+    <div id="container">
+        <div id="createBooksss" class="listbook">
+            <div id="bookSellPrice">
+                <input id="enterPrice" type="number" placeholder="Selling Price">
+            </div>
+            <div id="bookSellName">
+                <input id="enterbookname" type="text" placeholder="Book Name">
+            </div>
+            <div id="bookSellCondition">
+                <label for="bookCondition">Book Condition</label>
+                <select id="bookCondition" aria-label="Book condition">
+                    <option value="old">Old</option>
+                    <option value="new">New</option>
+                </select>
+            </div>
+            <div id="bookSellPhoto">
+                <div id="photoPicker" role="button" tabindex="0" onclick="openPhotoSourcePicker()" onkeydown="if(event.key==='Enter' || event.key===' '){event.preventDefault(); openPhotoSourcePicker();}">
+                    <div id="photoPreviewList"></div>
+                    <p id="photoPickerText">Add book photos (max 4)</p>
+                </div>
+                <input id="addphotoGallery" type="file" accept="image/*" hidden onchange="handleBookImageSelect(event)">
+            </div>
+            <button onclick="cancel()" id="cancelBook">Cancel</button>
+            <button id="submitBook" onclick="addNewBook()">Post</button>
+        </div>
+        <div id="buyBackdrop" onclick="Done()"></div>
+        <div id="buyPage">
+            <button id="buyCloseBtn" type="button" onclick="Done()" aria-label="Close buy page">&times;</button>
+            <div id="buyPageMediaRow">
+                <button id="buyPrevBtn" class="buy-nav-btn" type="button" onclick="showPrevBuyImage()" aria-label="Previous image">
+                    <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+                </button>
+                <img id="buyPageImg" src="" alt="book image">
+                <button id="buyNextBtn" class="buy-nav-btn" type="button" onclick="showNextBuyImage()" aria-label="Next image">
+                    <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                </button>
+                <div id="buyPageThumbs"></div>
+            </div>
+            <p id="buyImageCounter"></p>
+            <br>
+            <hr>
+            <P id="bookPageName">Book Name :</P>
+            <br>
+            <P id="bookPagePrice">Book Price :</P>
+            <br>
+            <P id="bookPageCondition">Condition :</P>
+            <br>
+            <P id="ContactNumber">Contact :</P>
+            <br>
+            <hr>
+            <P id="Para">Note : To purchase this book,
+                please reach out to the given
+                <U>contact number</U>. We kindly request
+                that the conversation remains about
+                the book, such as its condition, price,
+                and pickup details. Thank you for your
+                understanding!
+            </P>
+            <br>
+            <button id="DoneBtn" onclick="Done()">Done</button>
+        </div>
+    </div>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

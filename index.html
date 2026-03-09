@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMart - Log In</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body id="logbody">
+    <div class="background-animation">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    
+    <form id="forum" class="slide-in">
+        <div class="logo-container">
+            <i class="fas fa-book-open"></i>
+            <h1 id="ttl">Sign in to BookMart</h1>
+        </div>
+        
+        <div class="input-group">
+            <label for="number">Email or Mobile Number</label>
+            <div class="input-with-icon">
+                <i class="fas fa-user"></i>
+                <input id="number" type="text" placeholder="Enter email or phone number">
+            </div>
+        </div>
+        
+        <div class="input-group">
+            <label for="passwd">Password</label>
+            <div class="input-with-icon">
+                <i class="fas fa-lock"></i>
+                <input id="passwd" type="password" placeholder="Enter password">
+                <span class="toggle-password" onclick="togglePassword()">
+                    <i class="fas fa-eye"></i>
+                </span>
+            </div>
+        </div>
+        
+        <button id="loggBtn" onclick="login(event)">
+            <span class="btn-text">Sign in</span>
+            <div class="btn-loading">
+                <i class="fas fa-spinner fa-spin"></i>
+            </div>
+        </button>
+        
+        <div class="divider">
+            <span>OR</span>
+        </div>
+        
+        <a href="createAc.html" id="newidbtn1">
+            <i class="fas fa-user-plus"></i>
+            Create new account
+        </a>
+    </form>
+    
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
