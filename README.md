@@ -1,4 +1,4 @@
-# Bo0kMart - College Book Exchange Platform
+# BookMart - College Book Exchange Platform
 
 A simple web application that allows college students to easily buy and sell used books. Users can browse available books, view specific details, see the seller’s contact information, and connect directly for transactions.
 
