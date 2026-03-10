@@ -13,4 +13,4 @@ A simple web application that allows college students to easily buy and sell use
 * **Backend:** Google Apps Script, Google Sheets
 
 ## Access Live Project
-The application is currently live and accessible at: [BokkMar App](https://harshad143t.github.io/bookMart/home.html))
+The application is currently live and accessible at: [BokkMart App](https://harshad143t.github.io/bookMart/home.html))
