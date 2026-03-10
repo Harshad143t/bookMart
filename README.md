@@ -1,23 +1,16 @@
-#BokkMar, book selling app for colleges
+# BokkMar - College Book Exchange Platform
 
-A simple web application that allows college students to buy and sell books easily. Users can view book details, see the seller’s contact, and connect directly for transactions.
+A simple web application that allows college students to easily buy and sell used books. Users can browse available books, view specific details, see the seller’s contact information, and connect directly for transactions.
 
+## Features
+* **List Books:** Easily list used books for sale with images and pricing.
+* **View Details:** Check book details, including the price and the seller's contact information.
+* **Direct Contact:** Contact sellers directly via their displayed phone numbers.
+* **User-Friendly:** A simple and intuitive interface designed specifically for college students.
 
-#College Book Exchange Platform
-Description
-This project is a simple web-based platform that allows college students to buy and sell used books. Users can browse available books, view details, and contact sellers directly.
+## Technologies Used
+* **Frontend:** HTML, CSS, JavaScript
+* **Backend:** Google Apps Script, Google Sheets
 
-Features
-List books for sale with images and pricing
-View book details, including price and seller contact information
-Contact sellers via the displayed phone number
-Simple and user-friendly interface
-Technologies Used
-HTML
-CSS
-JavaScript
-#backend
-google app script
-google sheets
-#access live at
-https://harshad143t.github.io/BOOK-SELLING-APP/
+## Access Live Project
+The application is currently live and accessible at: [BokkMar App](https://harshad143t.github.io/BOOK-SELLING-APP/)
